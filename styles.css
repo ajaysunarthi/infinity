@@ -1,0 +1,364 @@
+/* Meyer Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ---------------------------------------------------- */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    border-top: 5px solid teal;
+    width: 100%;
+    height: 100%;
+    font-size: 1.6em;
+    font-family: calibri;
+}
+
+@media screen and (max-width: 600px) {
+    .left,
+    .right {
+        display: block;
+        text-align: left;
+        padding: 1em;
+    }
+    .left {
+        padding-bottom: 0;
+    }
+    .navigation,
+    .about {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+    .navigation {
+        font-size: .9em;
+    }
+    .location {
+        border-top: 1px solid #b3b3b3;
+        font-size: .9em;
+        padding-top: 1em;
+        padding-left: 1em;
+        color: #827d7b;
+    }
+    .location span {
+        padding-left: .2em;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+    .portfolio {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #b3b3b3;
+    }
+    .right .content h2,
+    h1 {
+        margin-left: 1em;
+    }
+    .portfolio img {
+        padding: 1em;
+        flex: 1;
+    }
+    .active {
+        color: teal;
+    }
+    .about h4 {
+        display: block;
+        margin-bottom: .9em;
+        font-weight: 600;
+    }
+    .about p {
+        color: #827d7b;
+    }
+    .right .content h2 {
+        font-weight: 600;
+        color: #827d7b;
+    }
+    .right .content h1 {
+        font-weight: 600;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .bottom-box {
+        padding-left: 1em;
+        padding-bottom: 1em;
+        color: #827d7b;
+    }
+    .box-text {
+        padding-bottom: .9em;
+    }
+    .bottom-box h4 {
+        font-weight: 600;
+        color: #000;
+        padding-bottom: .5em;
+    }
+    .bottom {
+        padding-top: 1em;
+        border-bottom: 1px solid #b3b3b3;
+    }
+    .footer {
+        padding-top: 1em;
+        color: #827d7b;
+    }
+    .follow {
+        font-style: italic;
+        color: teal;
+    }
+    .footer {
+        padding-left: 1em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+    }
+    .left {
+        flex: 0 0 30%;
+    }
+    .right {
+        flex: 1;
+    }
+    .content {
+        padding: 2em;
+        padding-right: 1em;
+    }
+    .navigation,
+    .about {
+        padding: 1em;
+        color: #827d7b;
+    }
+    .content h2 {
+        color: #827d7b;
+        font-size: 1.4em;
+        margin-bottom: 1em;
+    }
+    .content h1 {
+        color: #000;
+        font-size: 1.6em;
+    }
+    .active {
+        color: teal;
+    }
+    .navigation .anchor {
+        margin-top: 1em;
+        color: #827d7b;
+    }
+    .about h4 {
+        color: #000;
+        font-size: 1em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+    .content h1 {
+        padding-bottom: 1em;
+        border-bottom: 1px solid #b3b3b3;
+    }
+    .right .content {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+    .location {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        color: #827d7b;
+    }
+    .location span {
+        padding-left: .5em;
+    }
+    .portfolio {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #b3b3b3;
+    }
+    .portfolio img {
+        margin: 0 auto;
+        flex: 1;
+        margin: .9em;
+        max-width: 270px;
+    }
+    .bottom {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-bottom: 1px solid #b3b3b3;
+    }
+    .bottom-box {
+        flex: 1;
+        padding: 1em;
+        max-width: 220px;
+    }
+    .box-heading {
+        font-weight: 600;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .box-text {
+        padding-bottom: 1em;
+        color: #827d7b;
+    }
+    .follow {
+        font-style: italic;
+        color: teal;
+    }
+    .footer {
+        padding-top: 1em;
+        padding-left: 1em;
+        color: #827d7b;
+    }
+    .footer .bold {
+        font-weight: 600;
+    }
+}
+
